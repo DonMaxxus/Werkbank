@@ -1,0 +1,301 @@
+FrameWidgetClass rootFrame {
+ ignorepointer 0
+ position 0 0
+ size 1366 768
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 1
+ {
+  ImageWidgetClass ImageWidgetRoot {
+   visible 1
+   disabled 0
+   clipchildren 1
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   imageTexture "{77352B83BE1A1435}MrfreezeUniWorkbench/scripts/4_World/layout/Workbench3.edds"
+   mode blend
+   "src alpha" 1
+   "no wrap" 0
+   stretch 1
+   "flip u" 0
+  }
+  PanelWidgetClass PanelWidget {
+   ignorepointer 1
+   color 0 0 0 0.9608
+   position -0.0023 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style blank
+   {
+    PanelWidgetClass PanelWidgetMain {
+     visible 1
+     ignorepointer 1
+     position 0.01611 0.01409
+     size 673.79901 0.92218
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 0
+     {
+      ButtonWidgetClass BtnAllRecipes {
+       visible 1
+       position 0.02356 0.87699
+       size 0.97223 0.11762
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "All Recipes"
+      }
+      ButtonWidgetClass BtnRecipes {
+       visible 0
+       position 0.20778 0.05133
+       size 0.31917 0.04
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "All recipes"
+      }
+      PanelWidgetClass PanelWrapperAllRecipes {
+       visible 1
+       ignorepointer 1
+       position 0.01827 0.04176
+       size 0.98527 0.95892
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ScrollWidgetClass ScrollWidgetRecipes {
+         ignorepointer 0
+         position -0.00906 -0.0057
+         size 1.00946 0.79096
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Colorable
+         "Scrollbar V" 1
+         {
+          WrapSpacerWidgetClass WrapSpacerWidgetRecipes {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 1.02 500
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 1
+           style Colorable
+           Padding 0
+           Margin 0
+           "Size To Content V" 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass PanelWrapperPosRecipes {
+       visible 0
+       ignorepointer 1
+       position 0.00933 0.09145
+       size 0.99114 0.90439
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ScrollWidgetClass ScrollWidgetPosRecipes {
+         visible 1
+         ignorepointer 0
+         position -0.00041 -0.00039
+         size 0.99953 0.99987
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Colorable
+         "Scrollbar V" 1
+         {
+          WrapSpacerWidgetClass WrapSpacerWidgetPosRecipes {
+           ignorepointer 0
+           position 0.01277 0
+           size 1.00723 0
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 1
+           style Colorable
+           Padding 0
+           Margin 0
+           "Size To Content V" 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass PanelWidgetItem {
+     ignorepointer 1
+     position 0.01151 0.03684
+     size 646.612 0.9304
+     halign right_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 0
+     {
+      TextWidgetClass TextItemName {
+       ignorepointer 1
+       position -0.0614 6.61563
+       size 0.7995 46.0084
+       halign center_ref
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       "text halign" center
+       "text valign" center
+      }
+      ItemPreviewWidgetClass ItemPreviewWidget {
+       ignorepointer 0
+       position 0.00515 0.09416
+       size 0.97768 0.44091
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      ButtonWidgetClass BtnCraft {
+       visible 1
+       disabled 1
+       color 0.8667 0 0 1
+       position 0.05318 0.02049
+       size 191.44099 93.9738
+       halign right_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 1
+       vexactsize 1
+       style Empty
+      }
+      ScrollWidgetClass ScrollCraftItems {
+       ignorepointer 0
+       position 0.00922 0.19516
+       size 0.95949 158.927
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 1
+       style blank
+       "Scrollbar V" 1
+       {
+        WrapSpacerWidgetClass WrapSpacerWidget {
+         ignorepointer 1
+         size 1 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 1
+         Padding 0
+         Margin 0
+         "Size To Content V" 1
+        }
+       }
+      }
+      ProgressBarWidgetClass ProgressCraftBar {
+       visible 0
+       ignorepointer 1
+       position 0.09608 0.14727
+       size 145.399 0.04737
+       halign right_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 1
+       vexactsize 0
+       style Stamina
+       current 0
+      }
+      TextWidgetClass ItemResultCount {
+       ignorepointer 1
+       position 0.02122 0.00804
+       size 0.13019 0.0686
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       "exact text" 1
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass TextWidget0 {
+       visible 1
+       ignorepointer 1
+       position 0.02597 0.12923
+       size 0.18835 0.04
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Attachments:"
+       "exact text" 0
+       text_proportion 0.9
+       "text valign" center
+      }
+      MultilineTextWidgetClass NedeedAttachms {
+       visible 1
+       ignorepointer 1
+       position 0.02534 0.06237
+       size 0.59907 0.06428
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       "exact text" 0
+       wrap 1
+      }
+      ImageWidgetClass ImgBtn {
+       visible 1
+       ignorepointer 1
+       position 0.04729 0.01706
+       size 194.58501 97.1179
+       halign right_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 1
+       vexactsize 1
+       imageTexture "{82F7D09475B55D8D}MrfreezeUniWorkbench/scripts/4_World/layout/redBtn.edds"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+   }
+  }
+ }
+}
